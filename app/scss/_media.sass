@@ -1,0 +1,675 @@
+// ≤1300px
++media-breakpoint-down(xl)
+	.menu
+		&__link
+			font-size: 18px
+			line-height: 120%
+	.container_pb
+		padding-left: 15px
+		padding-right: 15px
+	.main-about
+		&__title
+			font-size: 90px
+	.key-features__name
+		padding: 30px 30px 30px 0
+	.about-brochure
+		&__img
+			width: 900px
+	.projects-gallery__nav_next
+		left: -60px
+	.projects-gallery__nav_prev
+		right: -60px
+	.location__title
+		font-size: 70px
+		line-height: 120%
+		margin-bottom: 50px
+	.virtual-tour__gallery
+		min-height: 400px
+	.virtual-tour__gallery-name
+		font-size: 20px
+		line-height: 120%
+		margin-bottom: 15px
+	.excursion__title
+		font-size: 70px
+	.excursion-form__body
+		padding: 50px 30px 130px
+	.investment__year
+		font-size: 60px
+	.investment__right
+		padding-left: 111px
+	.developer__title
+		font-size: 72px
+	.footer-request-a-call__title
+		font-size: 50px
+	.section-line-left
+		left: 15px
+	.section-line-right
+		right: 15px
+// ≤992px
++media-breakpoint-down(lg)
+	.special-offer-modal__text
+		padding: 30px
+	.special-offer-modal__end
+		padding: 50px 30px
+	.menu
+		&__list
+			padding-bottom: 15px
+			justify-content: flex-start
+		&__item
+			display: flex
+			justify-content: center
+	.app-header__phone
+		font-size: 18px
+	.main-banner__title
+		font-size: 100px
+		line-height: 120%
+	.loader__text
+		font-size: 100px
+		line-height: 120%
+	.main-about__title
+		font-size: 60px
+		line-height: 120%
+		margin-bottom: 30px
+	.main-about__description
+		margin-bottom: 50px
+		font-size: 18px
+	.main-about__num
+		font-size: 40px
+	.main-about__name
+		font-size: 18px
+	.main-banner__btn-play
+		width: 90px
+		height: 90px
+		svg
+			width: 36px
+			height: 36px
+	.key-features__name h4, .key-features__name .h4
+		font-size: 28px
+	.key-features__title
+		font-size: 60px
+	.about-brochure__title
+		font-size: 40px
+	.about-brochure__form
+		max-width: 300px
+	.download-brochure-form__title
+		padding-left: 30px
+		padding-right: 30px
+	.download-brochure-form__form
+		padding-left: 30px
+		padding-right: 30px
+	.download-brochure-form__title
+		font-size: 19px
+	.download-brochure-form__btn
+		font-size: 16px
+	.download-brochure-form__ann
+		font-size: 14px
+	.about-brochure__img
+		width: 700px
+	.checked-list li
+		font-size: 20px
+		.ico
+			margin-top: 6px
+	.projects__title
+		font-size: 60px
+		margin-bottom: 50px
+		line-height: 120%
+	.project__title
+		line-height: 120%
+		padding: 20px 30px 20px 0
+		font-size: 40px
+	.project-info__container
+		grid-template-areas: "list list" "floorplan floorplan" "download download"
+	.project-info__floorplans
+		padding-bottom: 45px
+	.project-info__download
+		text-align: center
+	.content-list li
+		justify-content: center
+	.projects-gallery__img
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			width: 120px
+			background: linear-gradient(90deg, rgba($cb, 0.4), transparent)
+			z-index: 1
+		&::after
+			content: ''
+			position: absolute
+			top: 0
+			bottom: 0
+			right: 0
+			width: 120px
+			background: linear-gradient(-90deg, rgba($cb, 0.4), transparent)
+			z-index: 1
+	.projects-gallery
+		&__nav-box
+			top: 0
+			bottom: 0
+		&__nav
+			display: flex
+			align-items: center
+			justify-content: center
+			padding: 15px
+			top: 0
+			bottom: 0
+			margin-top: 0
+			width: 90px
+			height: 100%
+			.box
+				border-color: $cw
+				color: $cw
+			&_next
+				left: 15px
+				// background: linear-gradient(-90deg, transparent, rgba($cb, 0.3))
+			&_prev
+				// background: linear-gradient(90deg, transparent, rgba($cb, 0.3))
+				right: 15px
+			&:hover
+				.box
+					background-color: $cw
+					color: $c1
+	.projects-gallery__nav.swiper-button-disabled
+		opacity: 0.5
+	.location__title
+		font-size: 50px
+	.gallery__title
+		font-size: 50px
+	.gallery__item
+		flex: 1 1 auto
+		height: 300px
+		img
+			width: auto
+	.virtual-tour__title
+		font-size: 50px
+	.virtual-tour__gallery
+		display: block
+	.virtual-tour__gallery-item_big
+		width: 100%
+		margin-bottom: 30px
+		min-height: 400px
+	.virtual-tour__gallery-row
+		width: auto
+		padding-left: 0
+		flex-direction: row
+		margin: 0 -15px
+		.virtual-tour__gallery-item
+			width: calc(50% - 30px)
+			margin: 0 15px
+			min-height: 260px
+	.virtual-tour__gallery-item_big .virtual-tour__gallery-name
+		margin-bottom: 20px
+	.virtual-tour__gallery-item_big .virtual-tour__gallery-play
+		width: 120px
+		height: 120px
+	.excursion__title
+		font-size: 50px
+	.excursion__box
+		display: block
+	.excursion__text
+		width: 100%
+		padding-bottom: 50px
+	.excursion__form-box
+		width: 100%
+		padding-left: 0
+	.excursion-form__body
+		padding-left: 50px
+		padding-right: 50px
+	.excursion__list-item
+		justify-content: flex-start !important
+	.excursion-form__btn
+		width: auto
+		min-width: 140px
+		margin-top: 30px
+	.excursion-form__body
+		display: flex
+		flex-direction: column
+		align-items: center
+	.excursion-form__input
+		width: 100%
+	.investment__body
+		display: block
+	.investment__left
+		width: 100%
+		margin-bottom: 100px
+	.investment__right
+		width: 100%
+		padding-left: 0
+	.developer__title
+		font-size: 50px
+	.investment__container
+		padding-bottom: 50px
+	.developer-card_odd .developer-card__text
+		padding-right: 0
+	.developer-card
+		flex-direction: column
+	.developer-card__img
+		width: 100%
+		margin-bottom: 50px
+	.developer-card__text
+		padding: 0
+		width: 100%
+	.developer-card_even .developer-card__text
+		width: 100%
+		padding-right: 0
+		margin-right: 0
+		padding-left: 0
+	.footer-request-a-call__title
+		font-size: 40px
+	.footer-request-a-call__body
+		padding: 80px
+	.footer-request-a-call__row
+		display: block
+	.footer-request-a-call__text
+		width: 100%
+	.footer-request-a-call__form-box
+		width: 100%
+	.footer-request-a-call__form-box
+		padding-left: 0
+	.footer-request-a-call__text
+		padding: 0
+		margin-bottom: 80px
+	.app-footer__body
+		flex-wrap: wrap
+		justify-content: center
+	.app-footer__logo
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: center
+		flex: 1 1 auto
+		margin-bottom: 50px
+		img
+			max-width: 174px
+	.app-footer__follow-us
+		width: 50%
+	.app-footer__call-us
+		width: 50%
+	.footer-call-us__link
+		min-width: 160px
+	.developer-card__title
+		text-align: center
+	.developer-card__description
+		text-align: center
+	.developer-card__list-title
+		text-align: center
+	.location__tabs-item
+		font-size: 20px
+	.location-list
+		flex-wrap: wrap
+	.location-list__item
+		width: 50%
+	.location-list__title
+		line-height: 120%
+// ≤768px
++media-breakpoint-down(md)
+	.app-header__container
+		min-height: 50px
+	.app-header__menu
+		top: 50px
+	.btn-toggler__tx-box
+		display: none
+	.app-header__logo
+		left: 80px
+		transform: translateY(-50%)
+	.main-banner__title
+		font-size: 80px
+	.loader__text
+		font-size: 80px
+	.main-about__title
+		font-size: 48px
+	.main-about__num
+		font-size: 36px
+	.key-features__title
+		font-size: 40px
+		margin-bottom: 30px
+	.main-banner__scroll-down
+		bottom: 30px
+	.key-features__container
+		padding-top: 75px
+		padding-bottom: 50px
+	.key-features__name h4, .key-features__name .h4
+		font-size: 20px
+	.about-brochure__title
+		font-size: 30px
+	.about-brochure__container
+		padding-top: 75px
+		padding-bottom: 50px
+	.about-brochure__list
+		padding-left: 0
+		max-width: 100%
+		padding-bottom: 30px
+	.about-brochure__form
+		max-width: 100%
+	.about-brochure__img
+		display: none
+	.projects
+		padding-top: 75px
+		padding-bottom: 0
+	.projects__title
+		font-size: 40px
+	.project__title
+		font-size: 30px
+	.project-gallery__nav
+		justify-content: center
+	.project__title
+		display: block
+		text-align: center
+	.location__title
+		font-size: 40px
+		margin-bottom: 30px
+	.location__tabs-item
+		min-height: 0
+		font-size: 18px
+		padding: 25px 15px
+	.gallery
+		padding-top: 50px
+	.gallery__title
+		font-size: 40px
+		margin-bottom: 30px
+	.gallery__item
+		height: 240px
+	.virtual-tour__title
+		font-size: 40px
+		margin-bottom: 30px
+	.virtual-tour__gallery-row .virtual-tour__gallery-name
+		font-size: 16px
+		br
+			display: none
+	.virtual-tour__gallery-row .virtual-tour__gallery-item
+		min-height: 200px
+	.excursion__title
+		font-size: 40px
+	.content-list li
+		font-size: 20px
+		&::before
+			margin-top: 10px
+	.excursion-form__body
+		padding-bottom: 50px
+	.investment__left
+		padding-top: 75px
+		margin-bottom: 50px
+	.investment__title
+		font-size: 40px
+		margin-bottom: 30px
+	.investment__description
+		font-size: 18px
+	.investment__visa
+		padding: 50px 30px
+	.investment__container
+		padding-bottom: 0
+	.developer__title
+		font-size: 40px
+		margin-bottom: 30px
+	.footer-request-a-call__title
+		font-size: 30px
+		margin-bottom: 40px
+	.footer-request-a-call__body
+		padding: 40px 30px
+	.app-footer__follow-us
+		width: 100%
+	.app-footer__call-us
+		width: 100%
+	.app-footer__body
+		flex-direction: column
+	.app-footer__follow-us
+		margin-bottom: 30px
+	.app-footer__follow-us, .app-footer__call-us
+		display: flex
+		flex-direction: column
+		align-items: center
+// ≤576px
++media-breakpoint-down(sm)
+	.location__body
+		padding-bottom: 50px
+	.location-list__name
+		font-size: 14px
+		line-height: 120%
+	.location__img
+		margin-bottom: 30px
+	.app-header__phone_mobile
+		display: block
+	.btn-toggler
+		margin-left: -15px
+	.main-banner__title, .loader__text
+		font-size: 14vw
+	.app-header__phone_desktop
+		display: none
+	.app-header__phone
+		margin-right: -15px
+		color: $c1
+	.app-header__logo
+		left: 50%
+		transform: translate(-50%,-50%)
+	.menu__item
+		width: 100%
+	.menu__link
+		padding: 12px 15px
+	.app-header__logo
+		max-width: 100px
+	.main-banner__btn-play
+		width: 64px
+		height: 64px
+		padding-left: 5px
+		svg
+			width: 30px
+			height: 30px
+	.main-banner__play-text
+		font-size: 18px
+		margin-top: 30px
+	.main-about__title
+		font-size: 28px
+	.main-about__description
+		font-size: 16px
+		margin-bottom: 30px
+	.main-about__list
+		flex-direction: column
+		align-items: center
+	.main-about__item
+		margin-bottom: 20px
+	.key-features__title
+		font-size: 32px
+	.key-features__item
+		flex-direction: column
+		margin-bottom: 0
+	.key-features__img
+		width: 100%
+		margin-bottom: 10px
+	.key-features__name
+		width: 100%
+		padding-right: 0
+	.checked-list li
+		width: 100%
+		margin-bottom: 10px
+	.about-brochure__title
+		font-size: 26px
+	.download-brochure-form__form
+		padding-left: 15px
+		padding-right: 15px
+	.download-brochure-form__title
+		padding-left: 15px
+		padding-right: 15px
+	.projects__title
+		font-size: 32px
+		margin-bottom: 30px
+	.project__title
+		padding: 10px 0
+	.project__title .box
+		left: -15px
+	.project-gallery__nav
+		margin-left: -15px
+		margin-right: -15px
+	.project-gallery__nav .nav-item .nav-link
+		padding: 15px
+		font-size: 20px
+	.content-list li
+		justify-content: flex-start
+		font-size: 16px
+		&::before
+			margin-top: 6px
+			margin-right: 10px
+	.project-info__floorplans
+		padding-left: 0
+		padding-right: 0
+	.project-floorpans__info-item
+		font-size: 18px
+	.project-floorpans__info-list
+		width: 100%
+	.projects-gallery__nav
+		padding: 5px
+		width: 60px
+	.projects-gallery__nav .box
+		min-width: 30px
+		width: 30px
+		height: 30px
+		svg
+			width: 16px
+			height: 16px
+	.projects-gallery__nav-box
+		padding: 0
+	.projects-gallery__item
+		.container_pb
+			padding: 0
+	.projects-gallery__nav_prev
+		right: 0
+	.projects-gallery__nav_next
+		left: 0
+	.project-floorpans__nav
+		width: 30px
+		height: 30px
+		svg
+			width: 16px
+			height: 16px
+	.project-floorpans__nav-box
+		width: 90px
+	.location__title
+		font-size: 32px
+	.gallery__title
+		font-size: 32px
+	.gallery__item
+		height: 120px
+		margin: 0 5px
+	.gallery__list
+		margin-bottom: 10px
+	.gallery__play
+		width: 60px
+		height: 60px
+		svg
+			width: 26px
+			height: 26px
+	.virtual-tour__title
+		font-size: 32px
+	.virtual-tour__gallery-item_big
+		padding: 15px
+		min-height: 200px
+	.virtual-tour__gallery-item_big .virtual-tour__gallery-play
+		width: 79px
+		height: 79px
+		svg
+			width: 30px
+			height: 30px
+	.virtual-tour__gallery-row
+		margin: 0
+		display: block
+	.virtual-tour__gallery-item
+		margin-bottom: 15px
+	.virtual-tour__gallery-row .virtual-tour__gallery-item
+		width: 100%
+		margin: 0 0 15px
+	.virtual-tour__gallery-name
+		font-size: 16px
+		margin-bottom: 15px
+	.virtual-tour__gallery-play svg
+		width: 30px
+		height: 30px
+	.excursion__title
+		font-size: 32px
+		margin-bottom: 20px
+	.excursion__description
+		font-size: 18px
+	.excursion__list-title
+		font-size: 20px
+	.content-list li
+		margin-bottom: 10px
+	.excursion-form__body
+		padding: 30px 15px 45px
+	.excursion-form__title
+		margin-bottom: 20px
+	.excursion-form__btn
+		margin-top: 10px
+	.investment__title
+		font-size: 32px
+	.investment__visa
+		padding: 30px 15px 45px
+	.investment__ico
+		margin-bottom: 30px
+	.investment__desc
+		font-size: 20px
+	.investment__year
+		font-size: 40px
+		margin-bottom: 30px
+	.developer__title
+		font-size: 32px
+	.developer-card__description
+		font-size: 18px
+	.developer-card__list-title
+		font-size: 18px
+		margin-bottom: 30px
+	.developer-card__item-title
+		font-size: 18px
+	.developer-card__item-desc
+		font-size: 14px
+	.developer-card__list
+		margin: 0
+	.developer-card
+		padding-bottom: 30px
+	.footer-request-a-call__body
+		padding: 30px 15px 15px
+	.footer-request-a-call__title
+		font-size: 20px
+	.footer-request-a-call__desc
+		font-size: 14px
+	.footer-request-a-call__ico
+		margin-right: 15px
+	.footer-request-a-call__item
+		margin-bottom: 20px
+	.footer-request-a-call__text
+		margin-bottom: 50px
+	.footer-request-a-call__form
+		padding: 20px 15px
+	.footer-call-us__list
+		flex-wrap: wrap
+		justify-content: center
+		align-items: center
+	.footer-call-us__item
+		margin-bottom: 10px
+	.app-footer__copy
+		font-size: 14px
+	.project-info__description
+		align-items: flex-start
+	.location__img
+		margin-left: -15px
+		margin-right: -15px
+	.special-offer-modal__body
+		display: block
+	.special-offer-modal__start
+		width: 100%
+	.special-offer-modal__end
+		width: 100%
+	.special-offer-modal__text
+		padding-top: 50px
+	.special-offer-modal__close-btn::after
+		background-color: #fff
+	.special-offer-modal__desc
+		margin-bottom: 30px
+	.virtual-tour-modal__body
+		padding-left: 30px
+		padding-right: 30px
+	.excursion
+		padding-top: 50vh
+	.excursion__bg
+		height: 50vh
+	.thank-you-modal__body
+		padding: 50px 30px
